@@ -1,0 +1,28 @@
+.table-econom:nth-child(even) {
+    background: rgba(17, 17, 17, 0.06);
+}
+.table-econom:nth-child(odd) {
+    background: rgba(17, 17, 17, 0.03);
+}
+.table-econom {
+    width: 95%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.table-econom h1{
+    font-size: 16px;
+    font-family: Gilroy-Medium, sans-serif;
+    margin: 0;
+    text-align: start;
+    align-items: start;
+    width: 12%;
+}
+.table-econom .name-user {
+    width: 18%;
+    font-family: Gilroy-Medium, sans-serif;
+}
+.ref-end{
+    background: red;
+    height: 30px;
+    width: 90%;
+}

@@ -1,0 +1,250 @@
+.settings-block {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    /*align-items: center;*/
+    /*text-align: center;*/
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.first-block-setting {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-btn-setting {
+    background: rgba(17, 17, 17, 0.03);
+    border-radius: 20px;
+    width: 350px;
+    cursor: pointer;
+}
+.result-search {
+    padding-left: 20px;
+    background: white;
+    z-index: 1000;
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    transform: scale(0);
+    transition: 0,5s;
+    position: fixed;
+    overflow: auto;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.result-search.open-search {
+    transform: scale(1);
+}
+.result-search.open-search .body-open-search
+{
+    transform: scale(1);
+}
+.result-search.open-search .body-open-search p{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 90%;
+    padding: 7px;
+    cursor: pointer;
+}
+.price-span {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    align-items: start;
+}
+
+.img-div {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgb(218, 231, 249)
+}
+
+.setting-modal .modal-body {
+    height: 200px !important;
+}
+.img-div img {
+    width: 20px;
+}
+.text-div p {
+    padding: 0;
+    margin: 0;
+    font-family: Gilroy-Medium, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.text-div span {
+    font-size: 16px;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.second-block-setting div p {
+    font-size: 18px;
+    color: rgba(17, 17, 17, 0.36);
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.second-block-setting div div input, .first-btn, .second-btn {
+    /*width: 30%;*/
+    background: rgba(17, 17, 17, 0.03);
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.4);
+    padding: 20px;
+}
+
+.second-block-setting div div input::placeholder {
+    color: rgba(17, 17, 17, 0.4);
+}
+
+.second-block-setting div div .first-btn {
+    width: 15%;
+    background: #E7F0FF !important;
+    color: #006AFF;
+    cursor: pointer;
+}
+
+.second-block-setting div div .first-btn-2 {
+    width: 70%;
+    color: #006AFF;
+    cursor: pointer;
+}
+.second-block-setting div div .first-btn-2 input::placeholder {
+    font-size: 20px;
+}
+
+.second-block-setting div div .second-btn {
+    width: 25%;
+    background: #E7F0FF !important;
+    cursor: pointer;
+    color: #006AFF;
+}
+
+.second-btn-div {
+    width: 75%;
+}
+
+.second-btn-div input {
+    width: 80% !important;
+}
+
+.message-block div input, textarea {
+    background: rgba(17, 17, 17, 0.03);
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    color: rgba(17, 17, 17, 0.4);
+}
+
+.message-block div textarea {
+    resize: none;
+    height: 150px !important;
+}
+
+.message-block div input::placeholder {
+    color: rgba(17, 17, 17, 0.4);
+}
+.message-block div textarea::placeholder {
+    color: rgba(17, 17, 17, 0.4);
+    font-size: 20px;
+}
+.last-btn button {
+    background: #E7F0FF;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    font-family: Gilroy-Medium, sans-serif;
+    width: 120px;
+    height: 70px;
+    font-size: 20px;
+    color: #006AFF;
+    padding: 20px;
+}
+@media (max-width: 900px) {
+    .second-block-setting .w-50 {
+        width: 70% !important;
+    }
+    .second-block-setting div div input {
+        width: 50%;
+    }
+    .first-btn, .second-btn, .first-btn-2 {
+        margin-left: 10px;
+    }
+    .second-block-setting div div .second-btn {
+        font-size: 18px;
+    }
+    .second-btn-div {
+        width: 87%;
+    }
+    .second-block-setting div div .first-btn-2 {
+        width: 70%;
+    }
+    .second-btn-div input {
+        width: 80% !important;
+    }
+    .message-block div input, textarea {
+        width: 60%;
+    }
+    .text-div p {
+        font-size: 20px;
+    }
+    .text-div span{ 
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 600px) {
+    .settings-block .justify-content-between {
+        justify-content: center !important;
+    }
+    .settings-block .header-btn-setting {
+        width: 100%;
+    }
+    .second-block-setting div div .first-btn-2, 
+    .second-block-setting div div .second-btn,
+     .second-block-setting div div .first-btn,
+     .second-block-setting div p {
+        font-size: 15px;
+    }
+    .second-block-setting .w-50 {
+        width: 75% !important;
+    }
+}
+@media (max-width: 470px) {
+    .second-block-setting div div .first-btn-2, 
+    .second-block-setting div div .second-btn,
+     .second-block-setting div div .first-btn,
+     .second-block-setting div p {
+        font-size: 13px;
+    }
+    .second-block-setting .w-50 {
+        width: 90% !important;
+    }
+    .second-block-setting div div input, .first-btn, .second-btn, .first-btn-2 {
+        padding: 13px;
+    }
+    .second-block-setting div div input::placeholder , .second-block-setting div div textarea::placeholder {
+        font-size: 13px;
+    }
+    .last-btn button {
+        font-size: 15px;
+    }
+    .second-block-setting div div .first-btn-2 input::placeholder {
+        font-size: 13px;
+    }
+}

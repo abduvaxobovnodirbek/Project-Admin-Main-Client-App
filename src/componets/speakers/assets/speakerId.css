@@ -1,0 +1,523 @@
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: "LibreBaskerville-Regular";
+    src: url("../../fonts/LibreBaskerville-Regular.ttf");
+}
+
+@font-face {
+    font-family: "LibreBaskerville-Italic";
+    src: url("../../fonts/LibreBaskerville-Italic.ttf");
+}
+
+.speaker-id-page {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.first-block-id {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.first-block-id-mob {
+    display: none !important;
+}
+
+.first-block-id img, .first-block-id-mob img {
+    width: 160px;
+    border-radius: 20px;
+    height: 160px;
+}
+
+.first-block-id div:nth-child(1) {
+    width: 10%;
+}
+
+.first-block-id div:nth-child(2) {
+    width: 30%;
+}
+
+.first-block-id div:nth-child(3) {
+    width: 30%;
+}
+
+.first-block-id-mob {
+    justify-content: space-around;
+}
+
+.first-block-id-mob .img-block-mob {
+    width: 20%;
+}
+
+.first-block-id-mob .input-block-mob {
+    width: 70%;
+}
+
+.first-block-id-mob div input {
+    width: 97%;
+    background: rgba(17, 17, 17, 0.03);
+    border-radius: 20px;
+    border: none;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 24px;
+    color: rgba(17, 17, 17, 0.72);
+    outline: none;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.first-block-id div input {
+    width: 400px;
+    background: rgba(17, 17, 17, 0.03);
+    border-radius: 20px;
+    border: none;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 24px;
+    color: rgba(17, 17, 17, 0.72);
+    outline: none;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.second-block-id {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.second-block-id div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+    padding-left: 50px;
+}
+
+.second-block-id div p {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.36);
+}
+
+.second-block-id div .big-input {
+    width: 500px;
+    height: 240px;
+    text-align: start;
+    align-items: start;
+    resize: none;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background: rgba(17, 17, 17, 0.03);
+    color: rgba(17, 17, 17, 0.5);
+    border-radius: 18px;
+}
+
+.second-block-id div .div-btn button {
+    align-items: end;
+    width: 150px;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    background: rgba(235, 87, 87, 0.12);
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+    color: rgb(235, 87, 87);
+}
+
+.second-block-id div .big-input::placeholder {
+    color: rgba(17, 17, 17, 0.3);
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.second-block-id div:first-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.div-btn {
+    display: flex !important;
+    justify-content: end !important;
+    width: 100% !important;
+    text-align: end !important;
+    align-items: end !important;
+    padding-right: 85px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.second-block-id div input {
+    background: rgba(17, 17, 17, 0.03);
+    color: rgba(17, 17, 17, 0.5);
+    border-radius: 18px;
+    border: none;
+    font-family: Gilroy-Medium, sans-serif;
+    outline: none;
+    padding-left: 20px;
+    /*margin-bottom: 10px;*/
+    width: 500px;
+}
+
+.second-block-id div .input-1 {
+    height: 75px;
+    font-size: 22px;
+    margin-bottom: 5px !important;
+}
+
+.second-block-id div .input-2 {
+    height: 157px;
+    resize: none;
+    font-size: 22px;
+    background: rgba(17, 17, 17, 0.03);
+    color: rgba(17, 17, 17, 0.5);
+    border-radius: 18px;
+    border: none;
+    font-family: Gilroy-Medium, sans-serif;
+    outline: none;
+    padding: 20px;
+    /*margin-bottom: 10px;*/
+    width: 500px;
+}
+
+.second-block-id div input::placeholder, textarea::placeholder {
+    color: rgba(17, 17, 17, 0.3);
+    font-size: 24px;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.third-block-id {
+    padding-left: 55px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.third-block-id p, .fourth-block-id span, .third-block-id span, .fourth-block-id p, .five-block-id p, .five-block-id span {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+}
+
+.third-block-id p, .five-block-id p {
+    color: #006AFF;
+}
+
+.third-div {
+    width: 130px;
+}
+
+.third-div-2 {
+    width: 210px;
+}
+
+.third-div-3 {
+    width: 190px;
+}
+
+.fourth-block-id {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fourth-block-id span, .fourth-block-id p {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+}
+
+.five-block-id, .six-block-id {
+    padding-left: 70px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fourth-block-id div {
+    width: 85%;
+    padding-left: 22px;
+}
+
+.six-block-id div {
+    width: 50%;
+}
+
+.six-block-id div p {
+    padding-top: 10px;
+    padding-left: 5px;
+    color: rgba(17, 17, 17, 0.4);
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+}
+
+.six-block-id div input {
+    width: 500px;
+    height: 75px;
+    background: rgba(17, 17, 17, 0.03);
+    color: rgba(17, 17, 17, 0.8);
+    border-radius: 18px;
+    border: none;
+    font-family: Gilroy-Medium, sans-serif;
+    outline: none;
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+.last-block-id {
+    width: 100%;
+    padding-left: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.last-block-id p {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: rgba(17, 17, 17, 0.36);
+}
+
+.last-block-stat:nth-child(odd) {
+    background: rgba(17, 17, 17, 0.03);
+}
+
+.last-block-stat:nth-child(even) {
+    background: rgba(17, 17, 17, 0.06);
+}
+
+.last-block-stat {
+    width: 92%;
+    background: rgba(17, 17, 17, 0.03);
+    padding: 15px;
+    border-radius: 18px;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+}
+
+.last-block-stat p {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 18px;
+    color: rgba(17, 17, 17, 0.72);
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .first-block-id div:nth-child(1) {
+        width: 15%;
+    }
+
+    .first-block-id {
+        width: 95%;
+    }
+
+    .speaker-id-page .justify-content-around {
+        justify-content: space-around !important;
+    }
+
+    .div-btn {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .first-block-id div input {
+        width: 350px;
+        font-size: 22px;
+    }
+
+    .second-block-id div .big-input {
+        width: 450px;
+    }
+
+    .second-block-id div input, .second-block-id div .input-2 {
+        width: 450px;
+    }
+
+    .third-block-id .w-50 {
+        width: 75% !important;
+    }
+
+    .six-block-id div input {
+        width: 450px;
+    }
+
+    .last-block-stat {
+        width: 94%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .first-block-id div input {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .second-block-id div .big-input {
+        width: 380px;
+        font-size: 20px;
+    }
+
+    .second-block-id div input, .second-block-id div .input-2 {
+        width: 380px;
+        font-size: 20px;
+    }
+
+    .third-block-id .w-50 {
+        width: 75% !important;
+    }
+
+    .six-block-id div input {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .last-block-stat {
+        width: 96%;
+    }
+
+    .second-block-id div .div-btn button {
+        font-size: 19px;
+    }
+
+    .fourth-block-id div {
+        width: 95%;
+    }
+
+    .six-block-id div p {
+        font-size: 18px;
+    }
+
+    .last-block-stat p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 800px) {
+    .first-block-id.d-flex {
+        display: none !important;
+    }
+
+    .first-block-id-mob {
+        display: flex !important;
+    }
+
+    .second-block-id {
+        flex-direction: column;
+    }
+
+    .second-block-id div {
+        width: 98%;
+    }
+
+    .second-block-id div .big-input {
+        width: 97%;
+    }
+
+    .second-block-id div:first-child {
+        border-right: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .second-block-id div .input-1, .second-block-id div .input-2 {
+        width: 97%;
+    }
+
+    .third-block-id .w-50 {
+        width: 95% !important;
+    }
+
+    .fourth-block-id div {
+        width: 100%;
+    }
+
+    .six-block-id div input {
+        width: 95%;
+    }
+
+    .six-block-id {
+        flex-direction: column;
+    }
+
+    .six-block-id div {
+        width: 100%;
+    }
+
+    .last-block-stat {
+        width: 94%;
+    }
+}
+
+@media (max-width: 600px) {
+    .first-block-id-mob .img-block-mob {
+        display: none;
+    }
+
+    .first-block-id-mob .input-block-mob {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .five-block-id, .six-block-id, .last-block-id {
+        padding-left: 50px;
+    }
+
+    .last-block-stat p {
+        font-size: 16px;
+    }
+    .fourth-block-id span, .fourth-block-id p {
+        font-size: 20px;
+    }
+    .fourth-block-id div {
+        padding-left: 16px;
+    }
+    .fourth-block-id .body-fourth-block {
+        flex-direction: column;
+        padding-left: 25px;
+    }
+    .fourth-block-id div .title-span{
+        width: 50%;
+        text-align: start;
+        align-items: start;
+    }
+    .third-block-id .body-third-block {
+        flex-direction: column;
+    }
+    .third-block-id .body-third-block div {
+        width: 100%;
+    }
+    .third-block-id .body-third-block div .title-span {
+        width: 55%;
+        text-align: start;
+        align-items: start;
+    }
+    .third-block-id .body-third-block .justify-content-between {
+        justify-content: start !important;
+    }
+    .div-btn {
+        justify-content: center !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+    .second-block-id div {
+        padding-left: 40px;
+    }
+}
+@media (max-width: 450px) {
+    .last-block-stat p{
+        font-size: 12px;
+    }
+    .last-block-id div.pl-3 {
+        padding: 0 !important;
+    }
+    .five-block-id div.w-50 {
+        width: 100% !important;
+    }
+}

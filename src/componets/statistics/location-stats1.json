@@ -1,0 +1,82 @@
+[
+  {
+    "country": "O’zbekiston",
+    "percent": "83",
+    "id": 1
+  },
+  {
+    "country": "Tojikiston",
+    "percent": "1",
+        "id": 1
+  },
+  {
+    "country": "Qozog’iston",
+    "percent": "4",
+        "id": 1
+  },
+  {
+    "country": "Rossiya",
+    "percent": "5",
+        "id": 1
+  },
+  {
+    "country": "Janubiy Koreya",
+    "percent": "2",
+        "id": 1
+  },
+  {
+    "country": "Misr",
+    "percent": "2",
+        "id": 1
+  },
+  {
+    "country": "Qatar",
+    "percent": "3",
+        "id": 1
+  },
+  {
+    "country": "Turkiya",
+    "percent": "2",
+        "id": 1
+  },
+  {
+    "country": "Germaniya",
+    "percent": "2",
+        "id": 1
+  },
+  {
+    "country": "Angliya",
+    "percent": "3",
+        "id": 1
+  },
+  {
+    "country": "Fransiya",
+    "percent": "2",
+        "id": 1
+  },
+  {
+    "country": "AQSH",
+    "percent": "3",
+        "id": 1
+  },
+  {
+    "country": "Singapur",
+    "percent": "1",
+        "id": 1
+  },
+  {
+    "country": "Malayziya",
+    "percent": "0.5",
+        "id": 1
+  },
+  {
+    "country": "Yaponiya",
+    "percent": "0.2",
+        "id": 1
+  },
+  {
+    "country": "Ukraina",
+    "percent": "2",
+        "id": 1
+  }
+]

@@ -1,0 +1,19 @@
+.qurantine div {
+    width: 40% !important;
+}
+@media (max-width: 1000px) {
+    .qurantine div {
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .qurantine div {
+        width: 80% !important;
+    }
+}
+@media (max-width: 500px) {
+    .qurantine div {
+        width: 95% !important;
+    }
+}

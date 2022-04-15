@@ -1,0 +1,804 @@
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: "LibreBaskerville-Regular";
+    src: url("../../fonts/LibreBaskerville-Regular.ttf");
+}
+
+@font-face {
+    font-family: "LibreBaskerville-Italic";
+    src: url("../../fonts/LibreBaskerville-Italic.ttf");
+}
+
+.statistics-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+}
+
+.statistics-info-first {
+    display: flex;
+    justify-content: space-around;
+}
+
+.statistics-info-first .statistics-info-body {
+    width: 22%;
+    height: 100px;
+    background: rgba(17, 17, 17, 0.03);
+    border-radius: 20px;
+    outline: none;
+}
+
+.statistics-info-first .statistics-info-body .body-text {
+    text-align: start;
+}
+
+.statistics-info-first .statistics-info-body .body-text p {
+    margin: 0;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 22px;
+}
+
+.statistics-info-first .statistics-info-body .body-text span {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 18px;
+}
+
+.statistics-info-first .statistics-info-body .body-img-1, .body-img-2, .body-img-3, .body-img-4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.statistics-info-first .statistics-info-body .body-img-1 {
+    background: rgba(0, 106, 255, 0.12);
+}
+
+.statistics-info-first .statistics-info-body .body-img-2 {
+    background: rgba(155, 81, 224, 0.12);
+}
+
+.statistics-info-first .statistics-info-body .body-img-3 {
+    background: rgba(242, 153, 74, 0.12);
+}
+
+.statistics-info-first .statistics-info-body .body-img-4 {
+    background: rgba(39, 174, 96, 0.12);
+}
+
+.statistics-info-first .statistics-info-body .body-img-1 img, .body-img-2 img, .body-img-3 img, .body-img-4 img {
+    opacity: 1;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+}
+
+.statistics-info-second, .statistics-info-third {
+    width: 100%;
+}
+
+.statistics-info-second .cart-info, .statistics-info-third .buy-course-info {
+    width: 72%;
+    border-radius: 15px;
+    height: 270px;
+    background: rgba(17, 17, 17, 0.03);
+}
+
+.statistics-info-second .students-years-info, .statistics-info-third .students-gender-info {
+    width: 22%;
+    border-radius: 15px;
+    height: 270px;
+    background: rgba(17, 17, 17, 0.03);
+}
+
+.mobile-div-statistics .students-years-info, .mobile-div-statistics .students-gender-info, .mobile-div-statistics .category-statistics {
+    width: 30%;
+    border-radius: 15px;
+    display: none;
+    height: 270px;
+    background: rgba(17, 17, 17, 0.03);
+}
+
+.mobile-div-statistics .students-years-info p, .mobile-div-statistics .students-gender-info p, .mobile-div-statistics .category-statistics p {
+    font-size: 16px;
+}
+
+.mobile-div-statistics .percent-p-circle-1 {
+    font-size: 25px;
+}
+
+.mobile-div-statistics .percent-p-circle {
+    top: 35%;
+    font-size: 25px;
+}
+
+.mobile-div-statistics .list-years {
+    margin-top: 5px !important;
+}
+
+.mobile-div-statistics .ul-gender {
+    margin-top: 5px !important;
+    flex-direction: row;
+}
+.ul-gender li {
+    cursor: pointer;
+}
+.mobile-div-statistics .category-statistics .list-categories {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    width: 98%;
+    margin-left: 1px !important;
+    margin-top: 15px;
+}
+
+.first-chart-body {
+    width: 90%;
+
+}
+
+.first-chart-body ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12px;
+}
+
+.first-chart-body ul li {
+    list-style: inside !important;
+}
+
+.first-chart-body ul li:nth-child(1)::marker {
+    color: #006AFF;
+}
+
+.first-chart-body ul li:nth-child(2)::marker {
+    color: #E6E9F2;
+}
+
+.list-years {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: start;
+    align-items: start;
+    width: 90% !important;
+}
+
+.list-years li {
+    list-style: inside !important;
+    cursor: pointer;
+}
+
+.list-years li:nth-child(1)::marker {
+    color: #006AFF;
+}
+
+.list-years li:nth-child(2)::marker {
+    color: #F2C94C;
+}
+
+.list-years li:nth-child(3)::marker {
+    color: #2D9CDB;
+}
+
+.list-years li:nth-child(4)::marker {
+    color: #6FCF97;
+}
+
+.list-years li:nth-child(5)::marker {
+    color: #F2994A;
+}
+
+.list-years li:nth-child(6)::marker {
+    color: #E6E9F2;
+}
+.list-years li:nth-child(7)::marker {
+    color: #E6E9F2;
+}
+
+.students-years-info p, ul li {
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.list-years .li_1::marker {
+    color: #006aff;
+    font-size: 10px;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.ul-gender, .students-gender-info p {
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.ul-gender li {
+    list-style: inside !important;
+}
+
+.ul-gender li:first-child::marker {
+    color: #006AFF;
+}
+
+.ul-gender li:last-child::marker {
+    color: #E6E9F2;
+}
+
+.courses-statistics-main {
+    width: 47%;
+    border-radius: 15px;
+    height: 320px;
+    background: rgba(17, 17, 17, 0.03);
+}
+
+.coutry-statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    width: 95%;
+    padding-left: 5%;
+}
+
+.coutry-statistics span {
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.header-country-statistics {
+    width: 95%;
+    padding-left: 5%;
+    padding-top: 10px;
+}
+
+.header-country-statistics p {
+    font-size: 18px;
+    padding-top: 2px;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.header-country-statistics select {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    background: transparent;
+    height: 30px;
+    width: 120px;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.courses-statistics, .category-statistics {
+    width: 22%;
+    border-radius: 15px;
+    height: 320px;
+    background: rgba(17, 17, 17, 0.03);
+}
+
+.courses-statistics p {
+    font-size: 18px;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.category-statistics p {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 18px;
+}
+
+.category-statistics .list-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+    align-items: start;
+    grid-gap: 15px;
+}
+
+.list-categories li {
+    list-style: inside !important;
+}
+
+.list-categories li:nth-child(1)::marker {
+    color: #006AFF;
+}
+
+.list-categories li:nth-child(2)::marker {
+    color: #F2C94C
+}
+
+.list-categories li:nth-child(3)::marker {
+    color: #6FCF97;
+}
+
+.list-categories li:nth-child(4)::marker {
+    color: #E6E9F2;
+}
+
+.percent-p-circle {
+    position: absolute;
+    font-family: LibreBaskerville-Italic, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    top: 45%;
+    right: 33%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.percent-p-circle-1 {
+    position: absolute;
+    font-family: LibreBaskerville-Italic, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    top: 40%;
+    right: 33%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.list-statistics, .list-statistics1 {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 17%;
+}
+
+.list-statistics1 {
+    color: rgba(0, 0, 0, 0.4);
+    width: 9% !important;
+}
+
+@media (max-width: 1400px) {
+    .percent-p-circle-1 {
+        right: 28%;
+        top: 37%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .percent-p-circle-1 {
+        right: 26%;
+        top: 35%;
+    }
+}
+
+@media (max-width: 1210px) {
+    .percent-p-circle-1 {
+        right: 29%;
+        top: 38%;
+    }
+
+    .list-statistics1 {
+        width: 12% !important;
+    }
+
+    .list-statistics {
+        width: 20% !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .percent-p-circle-1 {
+        right: 30%;
+        top: 36%;
+        font-size: 23px;
+    }
+
+    .percent-p-circle {
+        right: 33%;
+        top: 46%;
+        font-size: 23px;
+    }
+
+    .list-years {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10px;
+    }
+
+    .ul-gender.w-75 {
+        width: 100% !important;
+    }
+
+    .ul-gender {
+        margin-top: 20px;
+    }
+
+    .ul-gender.ml-5, .ul-gender.mx-5 {
+        margin-left: 0 !important;
+    }
+
+    .ul-gender.pt-5 {
+        padding-top: 10px !important;
+    }
+
+    .category-statistics .list-categories {
+        width: 90%;
+        margin-left: 5px;
+    }
+
+    .category-statistics .list-categories li {
+        font-size: 13px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text span {
+        font-size: 16px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-img-1, .body-img-2, .body-img-3, .body-img-4 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-img-1 img, .body-img-2 img, .body-img-3 img, .body-img-4 img {
+        width: 35px;
+        height: 25px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text p {
+        font-size: 20px;
+    }
+
+    .courses-statistics .w-50 {
+        width: 60% !important;
+    }
+
+    .courses-statistics .w-50, .category-statistics .w-50 {
+        width: 60% !important;
+    }
+
+    .statistics-info-second .students-years-info .w-50, .statistics-info-third .students-gender-info .w-50 {
+        width: 60% !important;
+    }
+
+    .list-statistics {
+        width: 22% !important;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .percent-p-circle-1 {
+        right: 30%;
+        top: 35%;
+        font-size: 22px;
+    }
+
+    .percent-p-circle {
+        right: 30%;
+        top: 46%;
+        font-size: 22px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text span {
+        font-size: 15px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text p {
+        font-size: 18px;
+    }
+
+    .list-statistics1 {
+        width: 13% !important;
+    }
+
+    .list-statistics {
+        width: 23% !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .percent-p-circle-1 {
+        right: 30%;
+        top: 35%;
+        font-size: 20px;
+    }
+
+    .percent-p-circle {
+        right: 30%;
+        top: 46%;
+        font-size: 20px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text span {
+        font-size: 13px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text p {
+        font-size: 16px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-img-1, .body-img-2, .body-img-3, .body-img-4 {
+        width: 35px;
+        height: 35px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-img-1 img, .body-img-2 img, .body-img-3 img, .body-img-4 img {
+        width: 30px;
+        height: 20px;
+    }
+
+    .list-statistics1 {
+        width: 15% !important;
+    }
+
+    .list-statistics {
+        width: 25% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-statistics .list-categories {
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ul-gender {
+        flex-direction: column;
+    }
+
+    .ul-gender li {
+        margin-top: 10px;
+    }
+
+    .list-statistics1 {
+        width: 18% !important;
+        font-size: 14px;
+    }
+
+    .list-statistics {
+        width: 30% !important;
+        font-size: 13px;
+    }
+
+    .first-chart-body span, .students-years-info p, ul li, .first-chart-body ul, .students-gender-info div p, .courses-statistics div p, .category-statistics div p, .header-country-statistics p, .header-country-statistics select, .coutry-statistics span {
+        font-size: 14px;
+    }
+
+    .list-years {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .statistics-container {
+        padding-top: 20px !important;
+    }
+
+    .statistics-info-first {
+        flex-direction: column;
+    }
+
+    .statistics-info-first .justify-content-around {
+        justify-content: space-between !important;
+    }
+
+    .statistics-info-first .statistics-info-body {
+        width: 98%;
+        margin-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text p {
+        font-size: 22px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text span {
+        font-size: 16px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-img-1, .body-img-2, .body-img-3, .body-img-4 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-img-1 img, .body-img-2 img, .body-img-3 img, .body-img-4 img {
+        width: 35px;
+        height: 25px;
+    }
+
+    .statistics-info-second {
+        flex-direction: column;
+    }
+
+    .statistics-info-second .cart-info, .statistics-info-third .buy-course-info {
+        width: 98%;
+    }
+
+    .statistics-info-second .students-years-info, .statistics-info-third .students-gender-info {
+        display: none;
+    }
+
+    .statistics-info-fourth .category-statistics {
+        display: none;
+    }
+
+    .statistics-info-fourth .courses-statistics-main {
+        width: 65%;
+    }
+
+    .statistics-info-fourth .courses-statistics {
+        width: 30%;
+    }
+
+    .statistics-info-fourth .courses-statistics .w-50 {
+        width: 75% !important;
+    }
+
+    .statistics-info-fourth .courses-statistics .percent-p-circle {
+        font-size: 25px;
+    }
+    .mobile-div-statistics .students-years-info, .mobile-div-statistics .students-gender-info, .mobile-div-statistics .category-statistics {
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .mobile-div-statistics .percent-p-circle-1 {
+        font-size: 20px;
+    }
+
+    .mobile-div-statistics .percent-p-circle {
+        font-size: 20px;
+    }
+    .mobile-div-statistics .students-years-info p, .mobile-div-statistics .students-gender-info p, .mobile-div-statistics .category-statistics p {
+        font-size: 14px;
+    }
+
+    .mobile-div-statistics .students-years-info .list-years {
+        margin-top: 20px !important;
+    }
+
+    .mobile-div-statistics .students-years-info .list-years li,
+    .mobile-div-statistics .students-gender-info .ul-gender li,
+    .mobile-div-statistics .category-statistics ul li,
+    .courses-statistics div p {
+        font-size: 13px;
+    }
+
+    .mobile-div-statistics .students-gender-info .ul-gender {
+        flex-direction: column;
+    }
+
+    .mobile-div-statistics .category-statistics .list-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .percent-p-circle {
+        font-size: 20px !important;
+    }
+
+    .ul-gender li {
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .statistics-info-first .statistics-info-body .body-text p {
+        font-size: 20px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text span {
+        font-size: 14px;
+    }
+
+    .mobile-div-statistics .percent-p-circle-1 {
+        font-size: 18px;
+    }
+
+    .mobile-div-statistics .students-years-info .list-years li {
+        font-size: 11px;
+    }
+
+    .mobile-div-statistics .students-years-info, .mobile-div-statistics .students-gender-info, .mobile-div-statistics .category-statistics {
+        height: 240px;
+    }
+
+    .mobile-div-statistics .category-statistics .list-categories {
+        margin-top: 10px;
+    }
+
+    .mobile-div-statistics .category-statistics .list-categories li {
+        font-size: 11px;
+    }
+
+    .first-chart-body span {
+        font-size: 13px;
+        margin-left: 10px !important;
+    }
+
+    .first-chart-body ul li {
+        font-size: 12px;
+        padding-top: 3px;
+    }
+
+    .mobile-div-statistics .students-years-info p,
+    .mobile-div-statistics .students-gender-info p,
+    .mobile-div-statistics .category-statistics p,
+    .header-country-statistics p,
+    .header-country-statistics select,
+    .coutry-statistics span {
+        font-size: 12px;
+    }
+
+    .list-statistics {
+        width: 35% !important;
+    }
+
+    .list-statistics1 {
+        width: 22% !important;
+    }
+
+    .percent-p-circle {
+        font-size: 18px !important;
+        top: 50%;
+    }
+
+    .courses-statistics-main {
+        height: 280px;
+    }
+
+    .statistics-info-fourth .courses-statistics {
+        height: 280px;
+    }
+}
+
+@media (max-width: 450px) {
+    .statistics-info-first .statistics-info-body .body-text p {
+        font-size: 18px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-text span {
+        font-size: 12px;
+    }
+
+    .statistics-info-first .statistics-info-body .body-img-1, .body-img-2, .body-img-3, .body-img-4 {
+        width: 40px;
+        height: 40px;
+    }
+    .percent-p-circle-1 {
+        right: 23%;
+    }
+    .percent-p-circle {
+        right: 20%;
+    }
+    .statistics-info-first .statistics-info-body .body-img-1 img, .body-img-2 img, .body-img-3 img, .body-img-4 img {
+        width: 30px;
+        height: 20px;
+    }
+
+    .mobile-div-statistics .students-years-info p, .mobile-div-statistics .students-gender-info p, .mobile-div-statistics .category-statistics p, .header-country-statistics p, .header-country-statistics select, .coutry-statistics span {
+        font-size: 11px;
+    }
+    .mobile-div-statistics .percent-p-circle-1 {
+        font-size: 16px;
+    }
+    .percent-p-circle {
+        font-size: 16px !important;
+    }
+    .ul-gender li {
+        font-size: 11px !important;
+    }
+    .list-statistics {
+        width: 40% !important;
+    }
+    .list-statistics1 {
+        width: 24% !important;
+        padding-top: 5px !important;
+    }
+}

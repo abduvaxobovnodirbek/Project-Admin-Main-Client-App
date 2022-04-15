@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: "LibreBaskerville-Regular";
+    src: url("../../fonts/LibreBaskerville-Regular.ttf");
+}
+
+@font-face {
+    font-family: "LibreBaskerville-Italic";
+    src: url("../../fonts/LibreBaskerville-Italic.ttf");
+}
+.economics-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.first-block-economics {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.economics-container .first-block-economics div h1{
+    font-size: 16px;
+    font-family: Gilroy-Medium, sans-serif;
+    padding: 10px;
+    cursor: pointer;
+}
+.economics-container .first-block-economics div h1.active{
+    background: #E7F0FF;
+    border-radius: 12px;
+    color: #006AFF;
+}
+.second-block-economics {
+    width: 100%;
+}
+.second-block-economics div:nth-child(even) {
+    background: rgba(17, 17, 17, 0.06);
+}
+.second-block-economics div:nth-child(odd) {
+    background: rgba(17, 17, 17, 0.03);
+}
+.second-block-economics div {
+    width: 95%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.second-block-economics div h1{
+    font-size: 16px;
+    font-family: Gilroy-Medium, sans-serif;
+    margin: 0;
+}
+.show-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgba(17, 17, 17, 0.06);
+    padding: 30px 0;
+}
+.show-more-btn button {
+    padding: 14px 34px;
+    background: #006aff;
+    outline:none;
+    border:none;
+    font-size: 16px;
+    color: #fafafa;
+    border-radius: 14px;
+}
+@media (max-width: 1000px) {
+    .first-block-economics .w-50 {
+        width: 60% !important;
+    }
+}
+@media (max-width: 800px) {
+    .first-block-economics .w-50 {
+        width: 70% !important;
+    }
+    .table-econom h1 {
+        font-size: 14px !important;
+    }
+}
+@media (max-width: 700px) {
+    .first-block-economics .w-50 {
+        width: 80% !important;
+    }
+    .table-econom h1 {
+        font-size: 13px !important;
+    }
+    .economics-container .first-block-economics div h1 {
+        font-size: 14px !important;
+    }
+}
+@media (max-width: 564px) {
+    .first-block-economics .w-50 {
+        width: 95% !important;
+    }
+    .table-econom h1 {
+        font-size: 12px !important;
+    }
+    .economics-container .first-block-economics div h1 {
+        font-size: 13px !important;
+    }
+    .table-econom .name-user {
+        width: 17% !important;
+    }
+}

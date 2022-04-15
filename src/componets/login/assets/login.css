@@ -1,0 +1,338 @@
+@font-face {
+    font-family:'Gilroy-Medium' ;
+    src: url(../../fonts/Gilroy-Medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sectionLoginPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dis-button {
+    font-size: 16px!important;
+    color: red!important;
+}
+.button-box {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.loginPage-inner-icon{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 5%;
+}
+.parol-input{
+    position: relative ;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    justify-content: space-between ;
+}
+.loginPage-inner-icon img{
+    width: 20px;
+    height: 20px;
+    opacity: 50%;
+
+}
+.container {
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.react-tel-input .form-control {
+    position: relative !important;
+    font-size: 17px !important ;
+    letter-spacing: .01rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 65px !important;
+    margin-left: 0 !important;
+    background: rgba(17, 17, 17, 0.02) !important;
+    border: none !important;
+    border-radius: 24px !important;
+    line-height: 25px !important;
+    height: 100% !important;
+    width: 100% !important;
+    outline: none
+}
+.react-tel-input .flag-dropdown{
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    padding: 0 !important;
+    border: none!important;
+    background-color: rgba(17, 17, 17, 0) !important;
+    border-radius: 3px 0 0 3px !important;
+}
+.react-tel-input .flag-dropdown.open .selected-flag{
+    background: transparent;
+}
+.react-tel-input .selected-flag {
+    padding-left: 25px !important;
+}
+.phone-flag {
+    margin: 0!important;
+    background: transparent !important;
+    padding-left: 0!important;
+}
+.container-video-modal {
+    width: 1000px;
+    margin: 0 auto;
+}
+.mainLoginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 680px;
+    margin: 0 auto;
+    height: max-content;
+}
+
+.login-courses_sec_btn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.login-courses_sec_btn img{
+    width: 150px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.login-courses_sec_btn h2 p {
+    margin: 0;
+}
+.login-courses_sec_btnh3{
+    display: none;
+}
+.loader-login .sk-chase {
+    width: 20px!important;
+    height: 20px!important;
+    margin: 0 30px 0 30px!important;
+}
+.login-courses_sec_btn> .course_btn_1 {
+    width: 54px;
+    height: 25px;
+    background: #006aff;
+    border-radius: 24px;
+    padding: 3px;
+    border: none;
+    outline: none;
+    margin: 0 36px;
+    display: flex;
+    justify-content: flex-start;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.course_btn_pass {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 32px;
+    line-height: 37px;
+}
+.course_btn_active {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 32px;
+    padding-bottom: 54px;
+    line-height: 37px;
+}
+.login-courses_sec_btn > .course_btn_2 {
+    width: 54px;
+    height: 25px;
+    background: #006aff;
+    border-radius: 24px;
+    padding: 3px;
+    border: none;
+    outline: none;
+    margin: 0 36px;
+    display: flex;
+    justify-content: flex-end;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.course_btn_1 > div,
+.course_btn_2 > div {
+    width: 20px;
+    height: 19px;
+    background: #fafafa;
+    border-radius: 50%;
+}
+
+.course_btn_active {
+    color: #006aff;
+    font-family: Gilroy-Medium, sans-serif;
+}
+.course_btn_pass {
+    color: rgba(17, 17, 17, 0.54);
+}
+
+.loginPage-input-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginPage-inner-item {
+    width: 398px;
+    height: 80px;
+    padding-left: 35px;
+    font-family: Gilroy-Medium;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(17, 17, 17, 0.36);
+    background: rgb(248, 248, 248) !important;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+}
+.loginPage-inner-item::placeholder {
+    font-size: 20px;
+}
+.loginPage-text-item {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 21px;
+    color: #006aff;
+    opacity: 0.72;
+    margin-left: 25px;
+}
+
+.loginPage-btn-inner , .loginPage-btn-inner-kirish {
+    width: 98%;
+    padding: 20px 0;
+    background: #006aff;
+    border-radius: 20px;
+    border: none;
+    margin-top: 24px;
+    font-size: 17px;
+    color: #fff;
+    border: 3px solid transparent;
+}
+.loginPage-btn-inner-kirish{
+    background-color: transparent;
+    border: 3px solid #006aff;
+    color: #006aff;
+
+}
+#dis-button {
+    padding: 27px 125px 27px 125px;
+    background: #e7f0ff;
+    border-radius: 24px;
+    border: none;
+    margin-top: 24px;
+}
+.loginPage-btn-inner a ,.loginPage-btn-inner-kirish a {
+    font-family: Gilroy-Medium;
+    font-size: 24px;
+    line-height: 28px;
+    color: #006aff;
+    text-decoration: none;
+}
+
+.loginPage-inner-text-item {
+    margin-top: 34px;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(17, 17, 17, 0.36);
+    margin-left: 15px;
+}
+.loginPage-inner-text-item a {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 21px;
+    color: #006aff;
+    text-decoration: none;
+    padding-left: 4px;
+}
+.Bilim-oluvchi{
+    display: none;
+}
+.loginPage-inner-icon{
+    width: 30px;
+    border: none;
+    background: transparent;
+}
+.loginPage-inner-icon img{
+    width: 30px;
+    /* background: #1111118a; */
+}
+.validation-phone-login {
+    color: red;
+    font-family: "Samsung Sharp Sans" , serif;
+    padding-left: 10px;
+    transition: 0.5s;
+    transform: translateY(0) translateX(0);
+    background: transparent;
+}
+@media (max-width:425px) {
+    .Bilim-oluvchi{
+        display: block;
+    }
+    .login-courses_sec_btn h2{
+        display: none;
+    }
+    .button-box {
+
+        display: flex;
+        flex-direction: column;
+    }
+    .login-courses_sec_btn h3{
+        display: block;
+        font-size: 25px;
+    }
+    .loginPage-inner-item {
+        width: 350px;
+    }
+
+    .loginPage-input-item {
+        align-items: center;
+    }
+    .loginPage-btn-inner , .loginPage-btn-inner-kirish {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .loginPage-inner-text-item {
+        font-size: 16px;
+    }
+    .mainLoginPage {
+        padding-bottom: 100px;
+    }
+}
+@media (max-width: 425px){
+    .Bilim-oluvchi{
+        display: block;
+    }
+    .login-courses_sec_btn h3 {
+        font-size: 20px;
+    }
+    .loginPage-inner-item {
+        width: 300px;
+        font-size: 20px;
+    }
+    .loginPage-btn-inner a ,.loginPage-btn-inner-kirish a {
+        font-size: 20px;
+    }
+    .loginPage-inner-icon {
+    }
+    .loginPage-btn-inner , .loginPage-btn-inner-kirish {
+        padding: 27px 80px 27px 80px;
+    }
+    .loginPage-inner-text-item {
+        font-size: 14px;
+    }
+    .loginPage-inner-text-item a {
+        font-size: 14px;
+    }
+}

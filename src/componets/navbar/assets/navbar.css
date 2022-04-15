@@ -1,0 +1,337 @@
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../../fonts/Gilroy-Medium.ttf");
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    background: #006AFF;
+    position: fixed;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+a {
+    color: rgba(17, 17, 17, 0.5) ;
+}
+.navbar div img {
+    width: 115px;
+    height: 30px;
+}
+
+.navbar div .profile-logo {
+    padding-right: 150px;
+}
+
+.side-menu-bar {
+    height: 90vh;
+    width: 18%;
+    border-right: 1px solid rgba(17, 17, 17, 0.1);
+}
+.side-menu-bar ul {
+    height: 80%;
+}
+.side-menu-bar ul li p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 15px;
+    font-family: Gilroy-Medium, sans-serif;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+
+.d-none {
+    display: none !important;
+}
+.burger-menu-btn {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 50px;
+    cursor: pointer;
+    opacity: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #006AFF;
+}
+
+.burger-menu-btn span {
+    background: #FFFFFF;
+    border-radius: 100px;
+    width: 35px;
+    height: 6px;
+    display: block;
+    margin: 2px 0;
+}
+
+.close-navbar {
+    display: none;
+}
+
+.burger-menu-btn span:nth-child(2) {
+    height: 5px !important;
+}
+
+.side-menu-bar ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.side-menu-bar ul a {
+    width: 75%;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+    height: 50px;
+    line-height: 50px;
+    transition: all 0.2s ease;
+    color: rgba(17, 17, 17, 0.5);
+    padding-left: 10px;
+}
+
+.side-menu-bar ul a li svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+}
+
+.side-menu-bar ul a.active p {
+    padding-left: 25px;
+}
+
+.side-menu-bar ul a.active {
+    background: #E7F0FF;
+    color: #006AFF;
+}
+
+.side-menu-bar ul a li img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-text {
+    background: rgba(17, 17, 17, 0.05);
+    width: 90%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    border-radius: 15px;
+    margin-left: 12px;
+}
+
+.footer-text p {
+    padding-bottom: 0;
+    margin: 0;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.footer-text p:first-child {
+    font-size: 24px;
+}
+
+.footer-text p:last-child {
+    font-size: 18px;
+    font-weight: 500
+}
+
+.profile-logo .image-navbar {
+    width: 50px;
+    height: 40px;
+}
+
+.profile-logo .image-navbar img {
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.profile-logo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.profile-logo div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.profile-logo div p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+.profile-logo div span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.54);
+    margin: 0;
+    font-family: Gilroy-Medium, sans-serif;
+}
+
+@media (max-width: 1300px) {
+    .side-menu-bar ul li p {
+        font-size: 16px;
+    }
+
+    .side-menu-bar ul a {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .side-menu-bar ul a {
+        width: 87%;
+    }
+}
+
+@media (max-width: 1210px) {
+    .side-menu-bar {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        background: #FFFFFF;
+        width: 260px;
+        overflow: hidden;
+        transition: 0.7s;
+        transform: translateX(-300px);
+        z-index: 10;
+        box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    }
+
+    .close-navbar {
+        display: block;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        border-bottom: 0;
+        right: 0;
+        z-index: 9;
+        transition: 0.4s;
+        transform: translateX(-1300px);
+        background: transparent;
+    }
+
+    .close-navbar.back {
+        background: rgba(0, 0, 0, 0.2);
+        transform: translateX(0);
+    }
+
+    .show-menu {
+        transform: translateX(0);
+    }
+
+    .side-menu-bar ul li p {
+        font-size: 18px;
+    }
+
+    .side-menu-bar ul a {
+        width: 80%;
+    }
+
+    .burger-menu-btn {
+        opacity: 1;
+    }
+
+    .burger-menu-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .burger-menu-btn span {
+        width: 35px;
+        height: 4px;
+    }
+
+    .burger-menu-btn span:nth-child(2) {
+        height: 3px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar div img {
+        width: 100px;
+        height: 30px;
+    }
+    .profile-logo div p {
+        font-size: 15px;
+    }
+
+    .profile-logo div span {
+        font-size: 11px;
+    }
+    .profile-logo .image-navbar {
+        width: 40px;
+        height: 40px;
+    }
+    .profile-logo div .mt-2 {
+        margin-top: 2px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar div img {
+        width: 80px;
+        height: 20px;
+    }
+
+    .profile-logo div p {
+        font-size: 14px;
+    }
+
+    .profile-logo div span {
+        font-size: 10px;
+    }
+
+    .profile-logo .image-navbar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-logo div .mt-2 {
+        margin-top: 2px !important;
+    }
+
+    .burger-menu-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .burger-menu-btn span {
+        width: 25px;
+        height: 3px;
+    }
+
+    .burger-menu-btn span:nth-child(2) {
+        height: 2.5px !important;
+    }
+
+    .navbar div .ml-4, .navbar div .mx-4 {
+        margin-left: 4px !important;
+    }
+
+    .profile-logo.mx-5, .profile-logo.mr-5 {
+        margin-right: 5px !important;
+    }
+}
